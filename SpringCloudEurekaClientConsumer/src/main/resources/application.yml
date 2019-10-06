@@ -1,0 +1,17 @@
+spring:
+  application:
+    name: spring-cloud-eureka-client-consumer
+
+server:
+  port: 8081
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka/
+
+app:
+  clientProvider:
+    providerId: spring-cloud-eureka-client-provider
+    endpoint:
+      mensagem: /mensagem
